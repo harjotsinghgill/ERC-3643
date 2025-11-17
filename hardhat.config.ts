@@ -25,7 +25,7 @@ const roleBasedAccounts = [
   .slice(0, 20); // hardhat allows up to 20 accounts by default
 
 if (roleBasedAccounts.length === 0) {
-  const fallbackKey = process.env.DEFAULT_PRIVATE_KEY || '1f36dd877bfa8a8946ed49441b7767db5cddc0d82822641335c483ba7760abb5';
+  const fallbackKey = process.env.DEFAULT_PRIVATE_KEY || '';
   roleBasedAccounts.push(ensureHexPrefix(fallbackKey));
 }
 
