@@ -48,12 +48,12 @@ const config: HardhatUserConfig = {
       accounts: roleBasedAccounts,
       chainId: 171,
     },
-    redbelly_testnet: {
+    redbellyTestnet: {
       url: process.env.REDBELLY_TESTNET_RPC || 'https://governors.testnet.redbelly.network',
       accounts: roleBasedAccounts,
       chainId: 153,
     },
-    redbelly_mainnet: {
+    redbellyMainnet: {
       url: process.env.REDBELLY_MAINNET_RPC || 'https://governors.mainnet.redbelly.network',
       accounts: roleBasedAccounts,
       chainId: 151,
